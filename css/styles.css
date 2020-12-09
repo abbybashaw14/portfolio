@@ -24,14 +24,14 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #bd5d38;
+  --primary: #4B6F76;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark: #4B6F76;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -77,6 +77,64 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
+}
+
+.button1 {
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #646363;
+  border-color: #4B6F76;
+  align-items: center;
+  cursor: pointer;
+}
+
+img {
+  width: 125%;
+  height: 200%;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: -5px;
+}
+
+.grid-item {
+  width: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat (8, 1fr);
+  grid-auto-rows: repeat (8, 5vw);
+  grid-gap: 10px;
+}
+
+.grid-item1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.grid-item2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.grid-item3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.grid-item4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -159,12 +217,12 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: #4B6F76;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #824027;
+  color: #D2DAD3;
   text-decoration: underline;
 }
 
@@ -575,10 +633,10 @@ pre code {
   }
 }
 .row {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
-  margin-right: -0.75rem;
-  margin-left: -0.75rem;
+  margin-right: -0.50rem;
+  margin-left: -0.50rem;
 }
 
 .no-gutters {
@@ -3926,7 +3984,7 @@ input[type=button].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #bd5d38;
+  background-color: #bd2130;
 }
 
 .nav-fill > .nav-link,
@@ -4577,7 +4635,7 @@ input[type=button].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #bd5d38;
+  color: #4B6F76;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
@@ -4606,8 +4664,8 @@ input[type=button].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #4B6F76;
+  border-color: #4B6F76;
 }
 .page-item.disabled .page-link {
   color: #6c757d;
@@ -4683,7 +4741,7 @@ a.badge:hover, a.badge:focus {
 
 .badge-primary {
   color: #fff;
-  background-color: #bd5d38;
+  background-color: #4B6F76;
 }
 a.badge-primary:hover, a.badge-primary:focus {
   color: #fff;
@@ -4962,7 +5020,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #bd5d38;
+  background-color: #4B6F76;
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -5043,8 +5101,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #4B6F76;
+  border-color: #4B6F76;
 }
 .list-group-item + .list-group-item {
   border-top-width: 0;
@@ -6075,7 +6133,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #bd5d38 !important;
+  background-color: #4B6F76 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6203,7 +6261,7 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #bd5d38 !important;
+  border-color: #4B6F76 !important;
 }
 
 .border-secondary {
@@ -9777,7 +9835,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #bd5d38 !important;
+  color: #D2DAD3 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10021,7 +10079,7 @@ p.lead {
   text-transform: uppercase;
 }
 #sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
+  outline-color: #4B6F76;
 }
 
 @media (min-width: 992px) {
@@ -10075,11 +10133,22 @@ p.lead {
   font-size: 1.5rem;
   margin-right: 1.5rem;
 }
+
+.social-icons2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-right: -1.5rem;
+  margin-bottom: -5.5rem;
+
+}
+
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #4B6F76;
 }
 
 .dev-icons {
