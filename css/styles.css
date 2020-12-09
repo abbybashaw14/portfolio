@@ -7677,6 +7677,7 @@ button.bg-dark:focus {
 .mb-5,
 .my-5 {
   margin-bottom: 3rem !important;
+  text-decoration: none !important;
 }
 
 .ml-5,
@@ -10143,7 +10144,7 @@ p.lead {
 }
 
 .social-icons2 {
-  display: inline-flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
